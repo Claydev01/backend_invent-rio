@@ -1,2 +1,2 @@
-# backend_invent-rio
+# backend_inventario
 Projeto inventário para produtos
