@@ -1,5 +1,5 @@
 const express = require('express')
-const controller = require('./personagem.controller')
+const controller = require('./inventario.controller')
 const { validateObjectId } = require('../db/database.helper')
 const router = express.Router()
 

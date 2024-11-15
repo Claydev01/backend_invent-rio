@@ -2,7 +2,7 @@ const { MongoClient } = require('mongodb')
 
 // Preparamos as informações de acesso ao banco de dados
 const dbUrl = process.env.DATABASE_URL
-const dbName = 'mongodb-integrar-com-frontend'
+const dbName = 'mongodb-inventario'
 
 const client = new MongoClient(dbUrl)
 

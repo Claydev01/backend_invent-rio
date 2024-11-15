@@ -1,5 +1,5 @@
-const personagem = require('./personagem.entity')
-const service = require('./personagem.service')
+const inventario = require('./inventario.entity')
+const service = require('./inventario.service')
 
 async function readAll(res, res) {
 
@@ -14,7 +14,7 @@ async function readAll(res, res) {
 async function readById(req, res) {
   // Acessamos o parâmetro de rota ID
   const id = req.params.id
-  //Acessamos o personagem no service  através do ID
+  //Acessamos o inventario no service  através do ID
   const item = await service.readById(id)
 
   // Checamos se o item obtido é existente
@@ -28,7 +28,7 @@ async function readById(req, res) {
 async function create(req, res) {
 
   // Acessamos e Validamos o Body da Requisição
-  const {error, value: newItem}= personagem.validate(req.body)
+  const {error, value: newItem}= inventario.validate(req.body)
 
   
 
@@ -54,7 +54,7 @@ async function updateById(req, res) {
   const id = req.params.id
 
  // Acessamos e Validamos o Body da Requisição
- const {error, value: newItem}= personagem.validate(req.body)
+ const {error, value: newItem}= inventario.validate(req.body)
 
  
 

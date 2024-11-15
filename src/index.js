@@ -5,7 +5,7 @@ const cors = require('cors')
 require('express-async-errors');
 
 //Routers
-const personagemRouter = require('./personagem/personagem.router')
+const inventarioRouter = require('./inventario/inventario.router')
 //const { MongoClient, ObjectId } = require('mongodb')
 
 
@@ -29,7 +29,7 @@ async function main() {
   })
 
   //Routers
-  app.use('/personagem', personagemRouter)
+  app.use('/inventario', inventarioRouter)
 
   //erro HandlING
   app.use(function (err, req, res, next){

@@ -2,8 +2,8 @@ const { ObjectId } = require('mongodb')
 const { getDatabase } = require('../db/database-connection')
 
 function getCollection() {
-  //Acessamos a lista de personagem na collection do MongoDB
-  return getDatabase().collection('personagem')
+  //Acessamos a lista de inventario na collection do MongoDB
+  return getDatabase().collection('inventario')
 }
 function readAll() {
   return getCollection().find().toArray()
